@@ -1,0 +1,28 @@
+{
+  "name": "fuzbuz",
+  "version": "1.0.0",
+  "description": "A full stack app for Beardoes and those that love them",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meanderthal00/fuzbuz.git"
+  },
+  "keywords": [
+    "full-stack",
+    "handlebars",
+    "bulma",
+    "sass",
+    "node",
+    "express"
+  ],
+  "author": "codeBrokers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meanderthal00/fuzbuz/issues"
+  },
+  "homepage": "https://github.com/meanderthal00/fuzbuz#readme"
+}
