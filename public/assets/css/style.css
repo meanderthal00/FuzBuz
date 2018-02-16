@@ -1,9 +1,25 @@
 @font-face {
-    font-family: myFirstFont;
-    src: url(hairy_monster-webfont.woff2);
+    font-family: 'buried_before_bbregular';
+    src: url('buried-before.before-bb-webfont.woff2') format('woff2'),
+         url('buried-before.before-bb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
-h1 {
+/* h1 {
  font-family: myFirstFont; 
  font-size: 40px;
+} */
+.title {
+    font-family: buried_before_bbregular;
+    font-size: 100px !important;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+#beardo-text {
+    font-family: buried_before_bbregular;
+
 }
