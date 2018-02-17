@@ -8,6 +8,8 @@ var bodyParser = require("body-parser");
 var app = express();
 var PORT = process.env.PORT || 8080;
 
+//requiring models for syncing
+var db = require("./models");
 
 //Body-Parser*****************************
 
@@ -29,10 +31,11 @@ app.set("view engine", "handlebars");
 require("./routes/html-routes.js")(app);
 
 
-app.listen(PORT, function() {
-  console.log("App now listening at localhost:" + PORT);
+db.sequelize.sync({force: true}).then(function(){
+  app.listen(PORT, function() {
+  console.log("App now listening on PORT:" + PORT);
 });
-
+});
 
 // var mysql = require("mysql");
 
