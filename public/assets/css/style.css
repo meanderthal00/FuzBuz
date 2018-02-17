@@ -62,10 +62,10 @@
 #myCanvas {
     width: 800px !important;
     height: 800px !important;
+    background-color: white;
     background-image:url("../images/doodle_face.jpg");
     background-size: cover;
-    /* margin-left: 100px;
-    margin-right: auto; */
+    margin-left: 200px;
+    margin-right: center;
 
 }
-
