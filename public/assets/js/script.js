@@ -24,7 +24,7 @@ mouse.y = e.pageY - $(this).offset().top
 ctx.lineWidth = 3;
 ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
-ctx.strokeStyle = '#00CC99';
+ctx.strokeStyle = '#564706';
  
 canvas.addEventListener('mousedown', function(e) {
     ctx.beginPath();
