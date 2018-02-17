@@ -56,13 +56,15 @@
 
 #paint{
     width:800px;
-    height: 600px;
+    height: 900px;
 }
 
 #myCanvas {
     width: 800px !important;
-    height: 600px !important;
+    height: 800px !important;
     background-image:url("../images/doodle_face.jpg");
-    background-size: fill;
+    background-size: cover;
+    /* margin-left: 100px;
+    margin-right: auto; */
 
 }

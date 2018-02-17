@@ -9,11 +9,16 @@ var paint_style = getComputedStyle(painting);
 canvas.width = parseInt(paint_style.getPropertyValue('width'));
 canvas.height = parseInt(paint_style.getPropertyValue('height'));
 
-var mouse = {x: 0, y: 0};
+var mouse = {x: 0, y:-50};
  
 canvas.addEventListener('mousemove', function(e) {
-  mouse.x = e.pageX - this.offsetLeft;
-  mouse.y = e.pageY - this.offsetTop;
+    console.log("mouse move ");
+//   mouse.x = e.pageX + $(this).offset().left - $(this).position().left;
+mouse.x = e.pageX  -  $(this).offset().left
+console.log("pageX " +e.pageX);
+//   mouse.y = e.pageY + $(this).offset().top - $(this).position().top;
+mouse.y = e.pageY - $(this).offset().top
+  console.log("pageY " + e.pageY);
 }, false);
 
 ctx.lineWidth = 3;
