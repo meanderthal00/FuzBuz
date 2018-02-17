@@ -41,3 +41,8 @@ var onPaint = function() {
     ctx.lineTo(mouse.x, mouse.y);
     ctx.stroke();
 };
+
+// script for the shake
+$( document ).click(function() {
+    $( "#title-1" ).effect( "shake" );
+  });
