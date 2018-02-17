@@ -18,6 +18,7 @@ app.use(bodyParser.json());
 app.use(express.static("public"))
 
 //**************************************
+
 //handlebars below*******
 var exphbs = require("express-handlebars");
 //************************ */
@@ -25,9 +26,8 @@ var exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-var routes = require("./controllers/fuzbuzController.js");
+require("./routes/html-routes.js")(app);
 
-app.use(routes);
 
 app.listen(PORT, function() {
   console.log("App now listening at localhost:" + PORT);
