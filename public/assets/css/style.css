@@ -7,31 +7,48 @@
 
 }
 
-body {
-    background-image: url("../images/background1.jpg")
+.section {
+    background-image: url("../images/cool-blue-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #D9B310;
 }
 
 /* h1 {
  font-family: myFirstFont; 
  font-size: 40px;
 } */
-.title {
+.title-1 {
     text-align: center;
     font-family: buried_before_bbregular;
     font-size: 300px !important;
-    background: -webkit-linear-gradient(#eee, #333);
+    background: -webkit-linear-gradient(#D9B310, #0B3C5d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
 }
 #beardo-text {
     font-family: buried_before_bbregular;
+    background: -webkit-linear-gradient(#D9B310, #0B3C5d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
+}
+
+.label{
+    background: -webkit-linear-gradient(#D9B310, #0B3C5d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+}
+.title {
+    color: #f5deb3;
 }
 
 .subtitle{
     text-align: center;
     font-size: 50px;
+    color: #f5deb3;
 }
 .navbar {
     background-color: gray;
