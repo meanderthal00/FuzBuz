@@ -15,11 +15,13 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
-app.use(express.static("app/public"))
+app.use(express.static("public"))
 
 //**************************************
+var routes = require("./routes/html-routes.js");
 
-require("./app/routes/api-routes.js")(app);
+require("./routes/html-routes.js")(app);
+
 
 app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);

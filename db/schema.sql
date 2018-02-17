@@ -7,8 +7,8 @@ CREATE TABLE fuzers
     id INT AUTO_INCREMNT NOT NULL,
     username VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
-    password VARCHAR(55) NOT NULL
+    about_me VARCHAR(510),
+    password VARCHAR(55) NOT NULL,
+    primary key (id)
     ();
 
--- im going to test pushing now...if i mess up please don't hate me ryan
--- ttestsetsetset
