@@ -1,6 +1,6 @@
 module.exports = function (sequelize, DataTypes) {
     var Profile = sequelize.define("Profile", {
-        // Giving the Author model a name of type STRING
+        // Giving the Profile model a name of type STRING
         name: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -43,13 +43,16 @@ module.exports = function (sequelize, DataTypes) {
         }
     });
 
-    Profile.associate = function (models) {
-        // Associating Author with Posts
-        // When an Author is deleted, also delete any associated Posts
-        Profile.hasMany(models.Post, {
-            onDelete: "cascade"
-        });
-    };
+    // Profile.associate = function (models) {
+    //     // Associating Profile with Posts
+    //     // When an Profile is deleted, also delete any associated Posts
+    //     Profile.hasMany(models.Post, {
+    //         onDelete: "cascade"
+    //     });
+    // };
+
+    //leaving this here in case we want to do this with a seperate author table, but connecting it with a profile seems less intuitive
+
 
     return Profile;
 };
