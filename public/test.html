@@ -33,74 +33,124 @@
             <strong id="beardo-text">Beardoes</strong> and those who love them!
           </p>
         </div>
-        </div>
-        <!-- nav bar  -->
-        <div class="columns">
-          <div class="column">
-              <nav class="navbar" role="navigation" aria-label="main navigation">
-                  <div class="navbar-brand">
-                    <a class="navbar-item" href="https://bulma.io">
-                      <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
-                    </a>
+      </div>
+      <!-- nav bar  -->
+      <div class="columns">
+        <div class="column">
+          <nav class="navbar" role="navigation" aria-label="main navigation">
+            <!-- <div class= "navbar-brand"> -->
+              <a class="button is-right">
+                <span class="icon">
+                  <i class="fas fa-user-plus"></i>
+                </span>
+                <span>Register</span>
+              </a>
+              <a class="button modal-button" data-target="modal">
+                <span class="icon">
+                  <i class="fas fa-sign-in-alt"></i>
+                </span>
+                <span>Login</span>
                 
-                    <div class="navbar-burger">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
+              </a>
+              <div id="modal" class="modal is-active">
+                <div class="modal-background"></div>
+                <div class="modal-content">
+                  <div class="box">
+                    <div class="field">
+                      <label class="label">Username</label>
+                      <div class="control has-icons-left has-icons-right">
+                          <input class="input is-success" type="text" placeholder="Username" value="Username">
+                          <span class="icon is-small is-left">
+                              <i class="fas fa-user"></i>
+                          </span>
+                          <span class="icon is-small is-right">
+                              <i class="fas fa-check"></i>
+                          </span>
+                      </div>
                   </div>
-                </nav>
-          </div>
+                  <div class="field">
+                      <label class="label">Password</label>
+                    <p class="control has-icons-left">
+                        <input class="input" type="password" placeholder="Password">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                    </p>
+                </div>
+                <br>
+                    <a class="button is-black">
+                      <span class="icon">
+                          <i class="far fa-hand-scissors"></i>
+                      </span>
+                      <span class="label">Welcome Beardo</span>
+                    </a>
+                  </div>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+              </div>
+              
+
+              <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            <!-- </div> -->
+          </nav>
         </div>
-       <!-- card for face-doodle -->
-       
-  <div class="card-image">
-    <!-- <figure class="image is-4by3">
+      </div>
+      <!-- card for face-doodle -->
+
+      <div class="card-image">
+        <!-- <figure class="image is-4by3">
       <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
     </figure> -->
-  </div>
-  <div class="card-content">
-   <div id="paint">
-            <canvas id="myCanvas"></canvas>
+      </div>
+      <div class="card-content">
+        <div id="paint">
+          <canvas id="myCanvas"></canvas>
         </div>
-  </div>
-</div>
-        
+      </div>
+    </div>
 
 
-        <!-- <div class="columns is-mobile">
+
+    <!-- <div class="columns is-mobile">
         <div class="column is-half is-offset-one-quarter"> -->
 
 
-        
-    
 
-       
 
-</section>
 
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <p>
-        <strong>FuzBuz</strong> by
-        <a href="https://jgthms.com">codeBrokers</a>
-        <a href=""></a>
-        <a href=""></a>.
-      </p>
+
+
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          <strong>FuzBuz</strong> by
+          <a href="https://jgthms.com">codeBrokers</a>
+          <a href=""></a>
+          <a href=""></a>.
+        </p>
+      </div>
     </div>
-  </div>
-</footer>
-<!--  Jquery link -->
- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
- </script>
+  </footer>
+  <!--  Jquery link -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
 
-<script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"> </script>
-        
-<!-- js link -->
-<script type="text/javascript" src="assets/js/script.js">
-</script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js">
+  </script>
+
+  <!-- js link -->
+  <script type="text/javascript" src="assets/js/script.js">
+  </script>
 
 </body>
+
+
 
 </html>
