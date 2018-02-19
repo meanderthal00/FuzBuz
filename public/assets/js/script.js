@@ -46,3 +46,12 @@ var onPaint = function() {
 $( document ).click(function() {
     $( "#title-1" ).effect( "shake" );
   });
+
+  // script for modal 
+  $("#login").click(function() {
+    $(".modal").addClass("is-active");  
+  });
+  
+  $(".modal-close").click(function() {
+     $(".modal").removeClass("is-active");
+  });
