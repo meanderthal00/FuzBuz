@@ -21,7 +21,7 @@ mouse.y = e.pageY - $(this).offset().top
   console.log("pageY " + e.pageY);
 }, false);
 
-ctx.lineWidth = 3;
+ctx.lineWidth = 10;
 ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
 ctx.strokeStyle = '#564706';
