@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/meanderthal00/fuzbuz#readme",
   "dependencies": {
+    "csshake": "^1.5.3",
     "express": "^4.16.2",
     "express-handlebars": "^3.0.0",
     "handlebars": "^4.0.11",
