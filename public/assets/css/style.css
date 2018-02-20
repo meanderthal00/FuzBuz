@@ -84,3 +84,11 @@
 .modal-close{
     background: -webkit-linear-gradient(#D9B310, #0B3C5d);
 }
+
+.navbar {
+    padding: 10px;
+}
+
+.button {
+    margin: 5px;
+}
