@@ -21,14 +21,14 @@
     text-align: center;
     font-family: buried_before_bbregular;
     font-size: 300px !important;
-    background: -webkit-linear-gradient(#D9B310, #0B3C5d);
+    background: -webkit-linear-gradient(#D9B310, #0B3C5d,#D9B310);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 #beardo-text {
     font-family: buried_before_bbregular;
-    background: -webkit-linear-gradient(#D9B310, #0B3C5d);
+    background: -webkit-linear-gradient( #0B3C5d,#D9B310,#0B3C5d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -86,11 +86,15 @@
 }
 
 .navbar {
+    
     padding: 10px;
+    background-image: linear-gradient(#0B3C5d,#D9B310,#0B3C5d );
 }
 
 .button {
     margin: 5px;
+    background-image:url("../images/cool-blue-background.jpg");
+    color: #f5deb3;
 }
 
 
