@@ -43,8 +43,8 @@ var onPaint = function() {
 };
 
 // script for the shake
-// $( document ).click(function() {
-//     $( "#title-1" ).effect( "shake" );
+// $( document ).hover(function() {
+//     $( "#toggle" ).effect( "shake" );
 //   });
 
   // script for modal 

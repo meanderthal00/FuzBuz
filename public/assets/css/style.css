@@ -54,8 +54,8 @@
     background-color: gray;
 }
 
-#paint{
-    width:800px;
+#paint {
+    width: 800px;
     height: 900px;
 }
 
@@ -63,11 +63,10 @@
     width: 800px !important;
     height: 800px !important;
     background-color: white;
-    background-image:url("../images/doodle_face.jpg");
+    background-image: url("../images/doodle_face.jpg");
     background-size: cover;
-    margin-left: 200px;
-    margin-right: center;
-
+    margin-left: 500px;
+    margin-top: 50px;
 }
 
 .box {
@@ -75,13 +74,14 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .modal-background {
     background-image: url("../images/login_back.jpg");
     /* background-repeat: no-repeat; */
     /* background-size: cover; */
 }
 
-.modal-close{
+.modal-close {
     background: -webkit-linear-gradient(#D9B310, #0B3C5d);
 }
 
