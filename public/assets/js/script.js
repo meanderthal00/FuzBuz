@@ -3,12 +3,13 @@ console.log("front end js connected");
 
 var canvas = document.getElementById('myCanvas');
 var ctx = canvas.getContext('2d');
- 
+ console.log("i am 1");
 var painting = document.getElementById('paint');
+console.log("i am 2");
 var paint_style = getComputedStyle(painting);
 canvas.width = parseInt(paint_style.getPropertyValue('width'));
 canvas.height = parseInt(paint_style.getPropertyValue('height'));
-
+console.log("I am 3");
 var mouse = {x: 0, y:-50};
  
 canvas.addEventListener('mousemove', function(e) {
