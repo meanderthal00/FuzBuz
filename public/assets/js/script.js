@@ -55,3 +55,10 @@ var onPaint = function() {
   $(".modal-close").click(function() {
      $(".modal").removeClass("is-active");
   });
+  
+  //script for side nav bar (profile)
+   // Initialize collapse button
+   $(".button-collapse").sideNav();
+   // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+//    $('.collapsible').collapsible();
+   
