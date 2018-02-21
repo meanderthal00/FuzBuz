@@ -59,13 +59,17 @@
     height: 900px;
 }
 
+#main {
+    padding: 0px !important;
+}
+
 #myCanvas {
     width: 800px !important;
     height: 800px !important;
     background-color: white;
     background-image: url("../images/doodle_face.jpg");
     background-size: cover;
-    margin-left: 500px;
+    /* margin-left: 500px; */
     margin-top: 50px;
 }
 
@@ -176,14 +180,14 @@ body {
 }
  
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-/* @media screen and (max-height: 450px) {
+ @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
  
 a svg{
   transition:all .5s ease;
- 
+/* 
   &:hover{
     #transform:rotate(180deg);
   }
