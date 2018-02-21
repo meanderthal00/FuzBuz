@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FuzBuz</title>
+    
     <!-- Bulmaswatch CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <!-- favicon link -->
@@ -16,6 +17,8 @@
     <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
     <!-- style link -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+
 
 </head>
 
@@ -48,14 +51,14 @@
                 <div class="field">
                     <label class="label">Name</label>
                     <div class="control">
-                        <input class="input is-large" type="text" placeholder="Name">
+                        <input class="input is-large" id="name" type="text" placeholder="Name">
                     </div>
                 </div>
 
                 <div class="field">
                     <label class="label">Username</label>
                     <div class="control has-icons-left has-icons-right">
-                        <input class="input is-success is-large" type="text" placeholder="Username" value="Username">
+                        <input class="input is-success is-large" id="username" type="text" placeholder="Username" value="email">
                         <span class="icon is-small is-left">
                             <i class="fas fa-user"></i>
                         </span>
@@ -69,7 +72,7 @@
                 <div class="field is-3">
                     <label class="label">Email</label>
                     <div class="control has-icons-left has-icons-right">
-                        <input class="input is-danger is-large" type="email" placeholder="Email input" value="Email@">
+                        <input class="input is-danger is-large" id="email" type="email" placeholder="Email input">
                         <span class="icon is-small is-left">
                             <i class="fas fa-envelope"></i>
                         </span>
@@ -82,7 +85,7 @@
                 <div class="field">
                     <label class="label">Password</label>
                     <p class="control has-icons-left">
-                        <input class="input is-large" type="password" placeholder="Password">
+                        <input class="input is-large" id="password" type="password" placeholder="Password">
                         <span class="icon is-small is-left">
                             <i class="fas fa-lock"></i>
                         </span>
@@ -126,7 +129,7 @@
                 <div class="field">
                     <label class="label">About Me!</label>
                     <div class="control">
-                        <textarea class="textarea" placeholder="This area is all mine..."></textarea>
+                        <textarea class="textarea" id="aboutme" placeholder="This area is all mine..."></textarea>
                     </div>
                 </div>
 
@@ -142,7 +145,7 @@
 
                 <div class="field is-grouped">
                     <div class="control">
-                        <button class="button is-link is-large">Submit</button>
+                        <button class="button is-link is-large" id="submit">Submit</button>
                     </div>
                     <div class="control">
                         <button class="button is-text is-large">Cancel</button>
@@ -150,9 +153,14 @@
                 </div>
 
             </div>
+            <div id="pasteit">
+
+            </div>
     </section>
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js">
+    
     </script>
+    <script src="./assets/js/postit.js"></script>
 </body>
 
 </html>
