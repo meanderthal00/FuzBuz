@@ -4,38 +4,35 @@ module.exports = function (sequelize, DataTypes) {
         name: {
             type: DataTypes.STRING,
             allowNull: false,
-            // validate: {
-            //     // len: [1]
-            // }
+            validate: {
+                len: [1,100]
+            }
         },
         username: {
             type: DataTypes.STRING,
             allowNull: false,
-            // validate: {
-            //     len: [1]
-            // }
+            validate: {
+                len: [1,100]
+            }
         },
         email: {
             type: DataTypes.STRING,
             allowNull: false,
-            // validate: {
-            //     len: [1]
-            // }
+            validate: {
+                len: [1,50]
+            }
         },
         password: {
             type: DataTypes.STRING,
             allowNull: false,
-            // validate: {
-            //     len: [1]
-            // }
+            validate: {
+                len: [6,20]
+            }
         },
 
         beardStatus: {
             type: DataTypes.STRING,
             allowNull: true,
-            // validate: {
-            //     len: [1]
-            // }
         },
         aboutMe: {
             type: DataTypes.STRING,
