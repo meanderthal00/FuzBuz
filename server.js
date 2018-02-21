@@ -33,6 +33,7 @@ app.engine("handlebars", exphbs({
 app.set("view engine", "handlebars");
 
 require("./routes/html-routes.js")(app);
+require("./routes/profile-api-routes")(app);
 
 
 db.sequelize.sync({
