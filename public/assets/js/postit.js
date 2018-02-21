@@ -8,13 +8,14 @@ $(document).ready(function() {
 
 
     var pasteit = $("#pasteit");
-
+ 
 
 //   $(document).on("#submit", insertuser);
   $("#submit").on("click", insertuser)
 
   var profiles = [];
 
+  getprofiles();
 
   function initializeRows() {
     pasteit.empty();
@@ -40,21 +41,21 @@ $(document).ready(function() {
       [
         "<li class='list-group-item todo-item'>",
         "<span>",
-        profile.text,
+        profile.username,
         "</span>",
-        "<input type='text' class='edit' style='display: none;'>",
-        "<button class='delete btn btn-default'>x</button>",
-        "<button class='complete btn btn-default'>✓</button>",
+        // "<input type='text' class='edit' style='display: none;'>",
+        // "<button class='delete btn btn-default'>x</button>",
+        // "<button class='complete btn btn-default'>✓</button>",
         "</li>"
       ].join("")
     );
-
-    // $newInputRow.find("button.delete").data("id", todo.id);
-    // $newInputRow.find("input.edit").css("display", "none");
-    // $newInputRow.data("todo", todo);
-    // if (todo.complete) {
-    //   $newInputRow.find("span").css("text-decoration", "line-through");
-    // }
+console.log(newinfo);
+    // newinfo.find("button.delete").data("id", profile.id);
+    // newinfo.find("input.edit").css("display", "none");
+    newinfo.data("profile", profile);
+    if (profile.complete) {
+      newinfo.find("span").css("text-decoration", "line-through");
+    }
     return newinfo;
   }
 
@@ -67,18 +68,29 @@ $(document).ready(function() {
     var usernameinput = $("#username").val().trim();
     var emailinput = $("#email").val().trim();
     var passwordinput = $("#password").val().trim();
+    var beardinput = $("#userbeard").val();
     var aboutinput = $("#aboutme").val().trim();
+    var checker = $("#checker");
 
     var profile = {
         name: nameinput,
         username: usernameinput,
         email: emailinput,
         password: passwordinput,
-        // beardStatus:
+        beardStatus: beardinput,
         aboutMe: aboutinput
       
     };
 
+    //validation code ****************
+    if ((passwordinput.length <6) || (nameinput.length =0) || (usernameinput.length<6)){
+      alert("please properly fill out fields");
+    }
+    if (!(checker).prop('checked')){
+      alert("please agree!");
+    }
+    else{
+    //*************************
     $.post("/api/profile", profile, getprofiles);
     // nameinput.val("");
     // usernameinput.val("");
@@ -86,6 +98,7 @@ $(document).ready(function() {
     // passwordinput.val("");
     // aboutMe.val("");
   }
+}
 
 
 
