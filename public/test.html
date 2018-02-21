@@ -42,47 +42,36 @@
       <!-- nav bar  -->
       <div class="columns">
         <div class="column">
-          <nav class="navbar is-pulled-right" role="navigation" aria-label="main navigation">
+          <!-- <nav class="navbar is-pulled-right" role="navigation" aria-label="main navigation"> -->
             <div class="column is-half is-offset-one-quarter">
-              <!-- BELOW IS THE SYNTAX FOR THE FIRST SLIDE OUT (MATERIALIZE?) -->
-              <ul id="slide-out" class="side-nav">
-                <li>
-                  <div class="user-view">
-                    <div class="background">
-                      <img src="assets/images/background1.jpg">
-                    </div>
-                    <a href="#!user">
-                      <img class="circle" src="assets/images/will_placeholder.jpg">
-                    </a>
-                    <a href="#!name">
-                      <span class="white-text name">Username</span>
-                    </a>
-                    <a href="#!email">
-                      <span class="white-text email">jdandturk@gmail.com</span>
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <a href="#!">
-                    <i class="material-icons">cloud</i>First Link With Icon</a>
-                </li>
-                <li>
-                  <a href="#!">Second Link</a>
-                </li>
-                <li>
-                  <div class="divider"></div>
-                </li>
-                <li>
-                  <a class="subheader">Subheader</a>
-                </li>
-                <li>
-                  <a class="waves-effect" href="#!">Third Link With Waves</a>
-                </li>
-              </ul>
-              <a href="#" data-activates="slide-out" class="button-collapse">
-                <i class="button material-icons">Profile</i>
-              </a>
+            
+              <!-- Side navbar -->
+            <div id="sideNavigation" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <!-- <a href="#">About</a>
+              <a href="#">Features</a>
+              <a href="#">Contact Us</a> -->
+              <div id="main">
+                <div id="profileImage">
+                  <img src="assets/images/will_placeholder.jpg">
+                </div class="profile">
+                <p>Username</p>
+                <p>About me</p>
+                </div>
             </div>
+             
+            <nav class="topnav navbar">
+              <a href="#" onclick="openNav()">
+                <svg width="30" height="30" id="icoOpen">
+                    <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                </svg>
+              </a>
+              
+            </nav>
+             
+            
 
             <a href="profileTest.html" class="button">
               <span class="icon">
@@ -98,82 +87,36 @@
 
             </a>
 
+        
 
 
-
-
-
-
-            <div id="modal" class="modal">
-              <!-- "is-active" -->
-              <div class="modal-background"></div>
-              <div class="modal-content">
-                <div class="box">
-                  <div class="field">
-                    <label class="label">Username</label>
-                    <div class="control has-icons-left has-icons-right">
-                      <input class="input is-success" type="text" placeholder="Username">
-                      <span class="icon is-small is-left">
-                        <i class="fas fa-user"></i>
-                      </span>
-                      <span class="icon is-small is-right">
-                        <i class="fas fa-check"></i>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="field">
-                    <label class="label">Password</label>
-                    <p class="control has-icons-left">
-                      <input class="input" type="password" placeholder="Password">
-                      <span class="icon is-small is-left">
-                        <i class="fas fa-lock"></i>
-                      </span>
-                    </p>
-                  </div>
-                  <a class="button is-black">
-                    <span class="icon">
-                      <i class="fas fa-cut"></i>
-                    </span>
-                    <span class="label">Forgot Password</span>
-                  </a>
-                  <br>
-                  <a class="button is-black">
-                    <span class="icon">
-                      <i class="far fa-hand-scissors"></i>
-                    </span>
-                    <span class="label">Welcome Beardo</span>
-                  </a>
-                </div>
-              </div>
-              <button class="modal-close is-large" aria-label="close"></button>
-            </div>
-
-
-            <div class="navbar-burger">
+            <!-- <div class="navbar-burger">
               <span></span>
               <span></span>
               <span></span>
-            </div>
+            </div> -->
 
             <!-- </div> -->
-          </nav>
+          <!-- </nav> -->
         </div>
       </div>
+    </div>
       <!-- card for face-doodle -->
-
+      <div class="column is-4 is-offset-6">
       <div class="card-image">
         <!-- <figure class="image is-4by3">
       <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
     </figure> -->
       </div>
-      <div class="card-content">
+      
         <div id="paint">
           <canvas id="myCanvas"></canvas>
 
         </div>
 
       </div>
-    </div>
+    
+  
  <div class="column is-4 is-offset-6">
       <!-- <div id="buttons">
         <input type="button" id="clear" value="Clear">
@@ -190,7 +133,49 @@
 
 
 
-
+    <div id="modal" class="modal">
+        <!-- "is-active" -->
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <div class="box">
+            <div class="field">
+              <label class="label">Username</label>
+              <div class="control has-icons-left has-icons-right">
+                <input class="input is-success" type="text" placeholder="Username">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-user"></i>
+                </span>
+                <span class="icon is-small is-right">
+                  <i class="fas fa-check"></i>
+                </span>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Password</label>
+              <p class="control has-icons-left">
+                <input class="input" type="password" placeholder="Password">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-lock"></i>
+                </span>
+              </p>
+            </div>
+            <a class="button is-black">
+              <span class="icon">
+                <i class="fas fa-cut"></i>
+              </span>
+              <span class="label">Forgot Password</span>
+            </a>
+            <br>
+            <a class="button is-black">
+              <span class="icon">
+                  <i class="far fa-hand-peace"></i>
+              </span>
+              <span class="label">Welcome Beardo</span>
+            </a>
+          </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
 
 
   </section>

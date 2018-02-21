@@ -55,12 +55,25 @@ var onPaint = function() {
   
   //script for side nav bar (profile)
    // Initialize collapse button
-   $(".button-collapse").sideNav();
+//    $(".button-collapse").sideNav();
    // Initialize collapsible (uncomment the line below if you use the dropdown variation)
 //    $('.collapsible').collapsible();
+
+function openNav() {
+    document.getElementById("sideNavigation").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+ 
+function closeNav() {
+    document.getElementById("sideNavigation").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}
    
 
 // clear canvas button
+var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
 document.getElementById('clear-canvas').addEventListener('click', function() {
     context.clearRect(0, 0, canvas.width, canvas.height);
   }, false);

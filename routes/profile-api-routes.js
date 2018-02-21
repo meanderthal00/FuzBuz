@@ -2,11 +2,13 @@ var db = require("../models");
 
 module.exports = function(app) {
   app.get("/api/profile", function(req, res) {
-    // Here we add an "include" property to our options in our findAll query
-    // We set the value to an array of the models we want to include in a left outer join
-    // In this case, just db.Post
+    var query = {};
+    if (req.query.profile_id){
+      query.profileId = req.query.profile_id;
+    }
     db.Profile.findAll({
-    //   include: [db.Post]
+      where: query,
+      include: [db.post]
     }).then(function(dbProfile) {
       res.json(dbProfile);
     });
