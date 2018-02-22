@@ -43,7 +43,7 @@
       <div class="columns">
         <div class="column">
           <!-- <nav class="navbar is-pulled-right" role="navigation" aria-label="main navigation"> -->
-          <div class="column is-half is-offset-one-quarter">
+          <!-- <div class="column is-half is-offset-one-quarter"> -->
 
             <!-- Side navbar -->
             <div id="sideNavigation" class="sidenav">
@@ -75,7 +75,7 @@
 
             <nav class="topnav navbar">
               <a href="#" onclick="openNav()">
-                <h4>Profile</h4>
+                <h4 id="profile-button">Profile</h4>
                 <svg width="30" height="30" id="icoOpen">
                   <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
                   <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
@@ -99,13 +99,13 @@
               <span>Login</span>
 
             </a>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
       <!-- =============================END OF NAVS================================================== -->
 
       <!-- =======================FACE DOODLE SECTION========================================= -->
-      <div class="column is-4 is-offset-6">
+      <div class="column is-offset-2">
         <div class="card-image">
           <!-- <figure class="image is-4by3">
       <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
@@ -136,13 +136,14 @@
 
 <!-- ==========================COMMENTS AREA?================================== -->
 <div>
-<h1>نظام تعليقات بسيط</h1>
+<h1 id="beardo-text">Beardoes Blab</h1>
 		<select>
 			<option value="ar">العربية</option>
 			<option value="en">ENGLISH</option>
 		</select><br>
-		<input type="text"><br>
-		<input type="submit" value="نشر"><br>
+    <input id="my-form" type="text"><br>
+    
+		<input class="button" onclick="resetFunction()"  type="submit" value="Submit"><br>
 	</body>
 </div>
 
@@ -150,6 +151,9 @@
   <p id="comment-1"></p>
 </div>
 
+<!-- ===================================DISQUS ATTEMPTS========================= -->
+
+<div id="disqus_thread"> I am supposed to be a comment thread</div>
 <!-- =========================END OF COMMENTS AREA================================= -->
 
 
@@ -160,23 +164,21 @@
         <div class="modal-background"></div>
         <div class="modal-content">
           <div class="box">
-            <div class="field">
+            <div class="field is-horizontal">
               <label class="label">Username</label>
-              <div class="control has-icons-left has-icons-right">
-                <input class="input is-success" type="text" placeholder="Username">
+              <div class="control has-icons-left">
+                <input class="input-modal" type="text">
                 <span class="icon is-small is-left">
                   <i class="fas fa-user"></i>
                 </span>
-                <span class="icon is-small is-right">
-                  <i class="fas fa-check"></i>
-                </span>
+               
               </div>
             </div>
-            <div class="field">
+            <div class="field is-horizontal">
               <label class="label">Password</label>
               <p class="control has-icons-left">
-                <input class="input" type="password" placeholder="Password">
-                <span class="icon is-small is-left">
+                <input class="input-modal" type="password">
+                <span class="icon is-small is-right">
                   <i class="fas fa-lock"></i>
                 </span>
               </p>
@@ -225,6 +227,9 @@
 
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- disqus scripts -->
+  <script id="dsq-count-scr" src="//fuzbuz.disqus.com/count.js" async></script>
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
