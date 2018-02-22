@@ -84,10 +84,10 @@ console.log(newinfo);
 
     //validation code ****************
     if ((passwordinput.length <6) || (nameinput.length =0) || (usernameinput.length<6)){
-      alert("please properly fill out fields");
+      alert("Please properly fill out fields");
     }
     if (!(checker).prop('checked')){
-      alert("please agree!");
+      alert("Please agree!");
     }
     else{
     //*************************

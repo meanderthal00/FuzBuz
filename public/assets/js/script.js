@@ -1,5 +1,5 @@
 // console.log("front end js connected");
-// scripts for the face-doodle
+// ========================SCRIPTS FOR FACE DOODLE================================
 
 var canvas = document.getElementById('myCanvas');
 var ctx = canvas.getContext('2d');
@@ -43,7 +43,15 @@ var onPaint = function() {
     ctx.stroke();
 };
 
+// clear canvas button
+var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
 
+document.getElementById('clear-canvas').addEventListener('click', function() {
+    context.clearRect(0, 0, canvas.width, canvas.height);
+  }, false);
+
+// ========================END OF FACE DOODLE SCRIPTS=========================
   // script for modal 
   $("#login").click(function() {
     $(".modal").addClass("is-active");  
@@ -68,12 +76,12 @@ function closeNav() {
     document.getElementById("sideNavigation").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
 }
-   
-
-// clear canvas button
-var canvas = document.getElementById('myCanvas');
-      var context = canvas.getContext('2d');
-
-document.getElementById('clear-canvas').addEventListener('click', function() {
-    context.clearRect(0, 0, canvas.width, canvas.height);
-  }, false);
+ 
+//   ==========================SCRIPTS FOR THE COMMENTS=========================
+// $(document).ready(function () {
+	$("[type = submit]").click(function () {
+		var lang    = $("select").val();
+		var comment = $("[type = text]").val();
+		$("<p lang=" + lang + ">" + comment + "</p>").appendTo("#comment-1");
+	});
+// });
