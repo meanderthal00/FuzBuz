@@ -44,6 +44,12 @@
     color: #f5deb3;
 }
 
+#profile-button {
+
+    color: #f5deb3;
+    margin: -0.86rem 0 .912rem 0;
+}
+
 .subtitle {
     text-align: center;
     font-size: 50px;
@@ -74,13 +80,19 @@
 }
 
 .box {
+    
     background-image: url("../images/cool-blue-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+ .input-modal {
+    color:#f5deb3;
+} 
+
 .modal-background {
-    background-image: url("../images/login_back.jpg");
+    background-image: -webkit-radial-gradient(#D9B310, #0B3C5d,#D9B310, #0B3C5d,#D9B310, #0B3C5d,#D9B310, #0B3C5d,#D9B310);
+    /* opacity: .75; */
     /* background-repeat: no-repeat; */
     /* background-size: cover; */
 }
@@ -97,8 +109,15 @@
 
 .button {
     margin: 5px;
-    background-image:url("../images/cool-blue-background.jpg");
-    color: #f5deb3;
+    /* background-image:url("../images/cool-blue-background.jpg"); */
+    background: -webkit-linear-gradient(#D9B310, #0B3C5d);
+
+    color: #f5deb3 !important;
+   
+}
+
+#clear-canvas {
+    margin: -65px;
 }
 
 /* The side navigation menu */
@@ -246,4 +265,14 @@ a svg{
 .userName {
     padding: 5px;
     font-weight: bold;
+}
+
+#profile-button {
+    line-height: 0%;
+}
+
+#comment-1 {
+    text-align: center;
+    font-size: 24px;
+    color: #f5deb3;
 }
