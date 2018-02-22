@@ -109,11 +109,11 @@
     z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #D9B310; /* Black*/
+    background-color: #D9B310; 
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-    font: #1d2731;
+    color: #1d2731;
 }
  
 /* The navigation menu links */
@@ -188,6 +188,7 @@ body {
  
 a svg{
   transition:all .5s ease;
+}
 /* 
   &:hover{
     #transform:rotate(180deg);
@@ -232,6 +233,17 @@ a svg{
 }
 
  */
-.profile {
-    font: #1d2731;
+.about {
+    background-color: #CCA80F;
+    padding: 5px;
+}
+
+#aboutTitle {
+    font-weight: bold;
+    
+}
+
+.userName {
+    padding: 5px;
+    font-weight: bold;
 }
