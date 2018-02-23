@@ -33,19 +33,19 @@
                     </p>
                 </div>
             </div>
-            <!-- nav bar  -->
+            <!-- =========================NAV BAR=====================================================  -->
       <div class="columns">
         <div class="column">
           <!-- <nav class="navbar is-pulled-right" role="navigation" aria-label="main navigation"> -->
-            <div class="column is-half is-offset-one-quarter">
-            
-              <!-- Side navbar -->
+          <!-- <div class="column is-half is-offset-one-quarter"> -->
+
+            <!-- Side navbar -->
             <div id="sideNavigation" class="sidenav">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
               <div id="main1">
                 <div id="profileImage">
                   <img src="assets/images/will_placeholder.jpg">
-                </div>
+     </div>
                 <br>
                 <div class="userName">
                 <h3>Username</h3>
@@ -64,22 +64,23 @@
                     <span>Log Out</span>
       
                   </a>
+
             </div>
-             
+
             <nav class="topnav navbar">
               <a href="#" onclick="openNav()">
+                <h4 id="profile-button">Profile</h4>
                 <svg width="30" height="30" id="icoOpen">
-                    <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
-                    <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
-                    <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                  <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
+                  <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
+                  <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
                 </svg>
               </a>
-              
-            </nav>
-             
-            
 
-            <a href="../create.handlebars" class="button">
+            </nav>
+
+
+            <a href="/profile" class="button">
               <span class="icon">
                 <i class="fas fa-user-plus"></i>
               </span>
@@ -89,24 +90,56 @@
               <span class="icon">
                 <i class="fas fa-sign-in-alt"></i>
               </span>
-              <span>Login</span>
+              <span>Login - chicken</span>
 
             </a>
-
-        
-
-
-            <!-- <div class="navbar-burger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div> -->
-
-            <!-- </div> -->
-          <!-- </nav> -->
+          <!-- </div> -->
         </div>
       </div>
-    </div>
+      <!-- =============================END OF NAVS================================================== -->
+       <!-- =============================MODAL SECTION=========================================== -->
+      <div id="modal" class="modal">
+        <!-- "is-active" -->
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <div class="box">
+            <div class="field is-horizontal">
+              <label class="label">Username</label>
+              <div class="control has-icons-left">
+                <input class="input-modal" type="text">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-user"></i>
+                </span>
+               
+              </div>
+            </div>
+            <div class="field is-horizontal">
+              <label class="label">Password</label>
+              <p class="control has-icons-left">
+                <input class="input-modal" type="password">
+                <span class="icon is-small is-right">
+                  <i class="fas fa-lock"></i>
+                </span>
+              </p>
+            </div>
+            <a class="button is-black">
+              <span class="icon">
+                <i class="fas fa-cut"></i>
+              </span>
+              <span class="label">Forgot Password</span>
+            </a>
+            <br>
+            <a class="button is-black">
+              <span class="icon">
+                <i class="far fa-hand-peace"></i>
+              </span>
+              <span class="label">Welcome Beardo</span>
+            </a>
+          </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
+      <!-- ============================END OF MODAL================================================================= -->
             {{{ body }}}
     </section>
     <footer class="footer">
@@ -129,7 +162,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"> </script>
 
     <!-- js link -->
-    <script type="text/javascript" src="../../public/assets/js/script.js">
+    <script type="text/javascript" src="assets/js/script.js">
     </script>
 </body>
 
