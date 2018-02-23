@@ -7,15 +7,20 @@ var express = require("express");
 
 module.exports = function (app) {
     app.get("/", function (req, res) {
-        // res.sendFile(path.join(__dirname, "../public/test.html"));
+        
         res.render("index");
     });
 
 
     app.get("/profile", function (req, res) {
 
-        // res.sendFile(path.join(__dirname, "../public/profiletest.html"));
         res.render("create");
+
+    });
+
+    app.get("/doodle", function (req, res) {
+
+        res.render("doodle");
 
     });
 

@@ -55,6 +55,7 @@ document.getElementById('clear-canvas').addEventListener('click', function() {
   // script for modal 
   $("#login").click(function() {
     $(".modal").addClass("is-active");  
+    console.log("Hi");
   });
   
   $(".modal-close").click(function() {
