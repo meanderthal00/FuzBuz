@@ -62,11 +62,7 @@ document.getElementById('clear-canvas').addEventListener('click', function() {
      $(".modal").removeClass("is-active");
   });
   
-  //script for side nav bar (profile)
-   // Initialize collapse button
-//    $(".button-collapse").sideNav();
-   // Initialize collapsible (uncomment the line below if you use the dropdown variation)
-//    $('.collapsible').collapsible();
+
 
 function openNav() {
     document.getElementById("sideNavigation").style.width = "250px";
@@ -90,25 +86,4 @@ function resetFunction() {
         document.getElementById("#my-form").reset();
         }
 
-        // ==============DISQUS=================
-
-
-// /**
-// *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-// *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-
-// var disqus_config = function () {
-// this.page.url = hidden-basin-13000.herokuapp.com/#;
-//   // Replace PAGE_URL with your page's canonical URL variable
-// this.page.identifier = "comment section"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-// };
-// (function() {  // DON'T EDIT BELOW THIS LINE
-// var d = document, s = d.createElement('script');
-
-// s.src = 'https://fuzbuz.disqus.com/embed.js';
-
-// s.setAttribute('data-timestamp', +new Date());
-// (d.head || d.body).appendChild(s);
-// })();
-// </script>
-// <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+   
