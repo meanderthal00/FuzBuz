@@ -1,4 +1,4 @@
-// console.log("front end js connected");
+console.log("front end js connected");
 // ========================SCRIPTS FOR FACE DOODLE================================
 
 var canvas = document.getElementById('myCanvas');
