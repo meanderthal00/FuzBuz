@@ -13,8 +13,10 @@ module.exports = function (app) {
 
 
     app.get("/profile", function (req, res) {
+
         // res.sendFile(path.join(__dirname, "../public/profiletest.html"));
         res.render("create");
+
     });
 
     app.use(express.static(path.join(__dirname, '/public')));
