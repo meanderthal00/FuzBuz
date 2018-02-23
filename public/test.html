@@ -27,7 +27,7 @@
           <img src="assets/images/beard_logo2.jpg" alt="">
         </div>
         <div class="column is-6 is-offset-1 is-fluid">
-          <h1 class="title-1 shake shake-constant ">
+          <h1 class="title-1 shake--hover shake ">
             FuzBuz
           </h1>
           <p class="subtitle">
@@ -45,20 +45,21 @@
           <!-- <nav class="navbar is-pulled-right" role="navigation" aria-label="main navigation"> -->
           <!-- <div class="column is-half is-offset-one-quarter"> -->
 
-            <!-- Side navbar -->
-            <div id="sideNavigation" class="sidenav">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <div id="main">
-                <div id="profileImage">
-                  <img src="assets/images/will_placeholder.jpg">
-     </div>
-                <br>
-                <div class="userName">
+          <!-- Side navbar -->
+          <div id="sideNavigation" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div id="main">
+              <div id="profileImage">
+                <img src="assets/images/will_placeholder.jpg">
+              </div>
+              <br>
+              <div class="userName">
                 <h3>Username</h3>
-                </div>
-                <br>
-                <div class="about">
+              </div>
+              <br>
+              <div class="about">
                 <h4 id="aboutTitle">About me</h4>
+
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
                 </div>
@@ -71,39 +72,56 @@
       
                   </a>
 
+
             </div>
-
-            <nav class="topnav navbar">
-              <a href="#" onclick="openNav()">
-                <h4 id="profile-button">Profile</h4>
-                <svg width="30" height="30" id="icoOpen">
-                  <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
-                  <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
-                  <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
-                </svg>
-              </a>
-
-            </nav>
-
-
-            <a href="profileTest.html" class="button">
+            <br>
+            <a id="logout">
               <span class="icon">
-                <i class="fas fa-user-plus"></i>
+                <i class="fas fa-sign-out-alt"></i>
               </span>
-              <span>Register</span>
-            </a>
-            <a class="button modal-button" data-target="modal" id="login">
-              <span class="icon">
-                <i class="fas fa-sign-in-alt"></i>
-              </span>
-              <span>Login</span>
+              <span>Log Out</span>
 
             </a>
+
+          </div>
+
+          <nav class="topnav navbar">
+            <a href="#" onclick="openNav()">
+              <h4 id="profile-button">Profile</h4>
+              <svg width="30" height="30" id="icoOpen">
+                <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
+                <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
+                <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
+              </svg>
+            </a>
+
+          </nav>
+
+
+          <a href="profileTest.html" class="button">
+            <span class="icon">
+              <i class="fas fa-user-plus"></i>
+            </span>
+            <span>Register</span>
+          </a>
+          <a class="button modal-button" data-target="modal" id="login">
+            <span class="icon">
+              <i class="fas fa-sign-in-alt"></i>
+            </span>
+            <span>Login</span>
+
+          </a>
           <!-- </div> -->
         </div>
       </div>
       <!-- =============================END OF NAVS================================================== -->
 
+
+
+
+
+
+      
       <!-- =======================FACE DOODLE SECTION========================================= -->
       <div class="column is-offset-2">
         <div class="card-image">
@@ -127,34 +145,49 @@
         <a class="button is-outlined is-large" id="clear-canvas">Clear</a>
 
       </div>
-     
+
       <!-- ========================END OF FACE DOODLE========================================= -->
 
+
+
+
+
+
       <!-- ===============SECTION FOR INFO============================ -->
-<div class="column" id="blog"></div>
-<!-- =================END OF INFO SECTION=================================== -->
+      <div class="column" id="blog"></div>
+      <!-- =================END OF INFO SECTION=================================== -->
 
-<!-- ==========================COMMENTS AREA?================================== -->
-<div>
-<h1 id="beardo-text">Beardoes Blab</h1>
-		<select>
-			<option value="ar">العربية</option>
-			<option value="en">ENGLISH</option>
-		</select><br>
-    <input id="my-form" type="text"><br>
-    
-		<input class="button" onclick="resetFunction()"  type="submit" value="Submit"><br>
-	</body>
-</div>
+      <!-- ==========================COMMENTS AREA?================================== -->
 
-<div>
-  <p id="comment-1"></p>
-</div>
 
-<!-- ===================================DISQUS ATTEMPTS========================= -->
+      <!-- ===================================DISQUS Area?========================= -->
 
-<div id="disqus_thread"> I am supposed to be a comment thread</div>
-<!-- =========================END OF COMMENTS AREA================================= -->
+      <div id="disqus_thread"></div>
+      <script>
+        /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+         */
+
+        var disqus_config = function () {
+          this.page.url = 'https://hidden-basin-13000.herokuapp.com/#'; // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = 'main_page'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+
+        (function () { // DON'T EDIT BELOW THIS LINE
+          var d = document,
+            s = d.createElement('script');
+
+          s.src = 'https://fuzbuz.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the
+        <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+      </noscript>
+      <!-- =========================END OF COMMENTS AREA================================= -->
 
 
 
@@ -171,7 +204,7 @@
                 <span class="icon is-small is-left">
                   <i class="fas fa-user"></i>
                 </span>
-               
+
               </div>
             </div>
             <div class="field is-horizontal">
@@ -243,7 +276,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
 <script src="./assets/js/authenticate.js"></script>
 
-
+  <!-- DISQUS scripting -->
+  <script id="dsq-count-scr" src="//fuzbuz.disqus.com/count.js" async></script>
 
 </body>
 
