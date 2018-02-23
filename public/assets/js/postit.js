@@ -41,7 +41,7 @@ $(document).ready(function() {
       [
         "<li class='list-group-item todo-item'>",
         "<span>",
-        profile.username,
+        // profile.username,
         "</span>",
         // "<input type='text' class='edit' style='display: none;'>",
         // "<button class='delete btn btn-default'>x</button>",
@@ -49,7 +49,7 @@ $(document).ready(function() {
         "</li>"
       ].join("")
     );
-console.log(newinfo);
+// console.log(newinfo);
     // newinfo.find("button.delete").data("id", profile.id);
     // newinfo.find("input.edit").css("display", "none");
     newinfo.data("profile", profile);
@@ -97,6 +97,8 @@ console.log(newinfo);
     // emailinput.val("");
     // passwordinput.val("");
     // aboutMe.val("");
+    // window.location = "/";
+
   }
 }
 

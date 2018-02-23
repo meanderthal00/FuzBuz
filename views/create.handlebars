@@ -4,95 +4,120 @@
 
 <div class="container">
 
-    <h3 class="title">
-        Create Your Profile
-    </h3>
-    <div class="field">
-        <label class="label">Name</label>
-        <div class="control">
-            <input class="input is-large" type="text" placeholder="Name">
-        </div>
-    </div>
+                <h3 class="title">
+                    Create Your Profile
+                </h3>
+                <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control">
+                        <input class="input is-large" id="name" type="text" placeholder="Name">
+                    </div>
+                </div>
 
-    <div class="field">
-        <label class="label">Username</label>
-        <div class="control has-icons-left has-icons-right">
-            <input class="input is-success is-large" type="text" placeholder="Username" value="Username">
-            <span class="icon is-small is-left">
-                <i class="fas fa-user"></i>
-            </span>
-            <span class="icon is-small is-right">
-                <i class="fas fa-check"></i>
-            </span>
-        </div>
-        <p class="help is-success">This username is available</p>
-    </div>
+                <div class="field">
+                    <label class="label">Username</label>
+                    <div class="control has-icons-left has-icons-right">
+                        <input class="input is-success is-large" id="username" type="text" placeholder="Username">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                        </span>
+                        <span class="icon is-small is-right">
+                            <i class="fas fa-check"></i>
+                        </span>
+                    </div>
+                    <p class="help is-success">This username is available</p>
+                </div>
 
-    <div class="field is-3">
-        <label class="label">Email</label>
-        <div class="control has-icons-left has-icons-right">
-            <input class="input is-danger is-large" type="email" placeholder="Email input" value="Email@">
-            <span class="icon is-small is-left">
-                <i class="fas fa-envelope"></i>
-            </span>
-            <span class="icon is-small is-right">
-                <i class="fas fa-exclamation-triangle"></i>
-            </span>
-        </div>
-        {{!--
-        <p class="help is-danger">This email is invalid</p> --}}
-    </div>
-    <div class="field">
-        <label class="label">Email</label>
-        <p class="control has-icons-left">
-            <input class="input is-large" type="password" placeholder="Password">
-            <span class="icon is-small is-left">
-                <i class="fas fa-lock"></i>
-            </span>
-        </p>
-    </div>
+                <div class="field is-3">
+                    <label class="label">Email</label>
+                    <div class="control has-icons-left has-icons-right">
+                        <input class="input is-danger is-large" id="email" type="email" placeholder="Email@email.com">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="icon is-small is-right">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </span>
+                    </div>
+                    <!-- <p class="help is-danger">This email is invalid</p> -->
+                </div>
+                <div class="field">
+                    <label class="label">Password</label>
+                    <p class="control has-icons-left">
+                        <input class="input is-large" id="password" type="password" placeholder="Password">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                    </p>
+                </div>
 
-    <div class="field">
-        <label class="label">My Beard Is...</label>
-        <div class="control">
-            <div class="select">
-                <select>
-                    <option>Majestic</option>
-                    <option>Out of Control</option>
-                    <option>Well Tamed</option>
-                    <option>Just Beginning</option>
-                    <option>Never Been Seen</option>
-                    <option>Trying to Grow</option>
-                    <option>Actually a Mustache</option>
-                    <option>Actually a Goatee</option>
-                </select>
+                <div class="field">
+                    <label class="label">My Beard Is...</label>
+                    <div class="control">
+                        <div class="select">
+                            <select id="userbeard">
+                                <option>Majestic</option>
+                                <option>Out of Control</option>
+                                <option>Well Tamed</option>
+                                <option>Just Beginning</option>
+                                <option>Never Been Seen</option>
+                                <option>Trying to Grow</option>
+                                <option>Actually a Mustache</option>
+                                <option>Actually a Goatee</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- pic upload here -->
+                <div class="file">
+                        
+                    <label class="file-label">
+                        
+                        <input class="file-input" type="file" name="resume">
+                        <span class="file-cta">
+                            <span class="file-icon">
+                                <i class="<i class="far fa-id-badge></i>
+                            </span>
+                            <span class="file-label">
+                                Choose a pic to upload
+                            </span>
+                        </span>
+                    </label>
+                </div>
+                <!-- pic upload above -->
+                <div class="field">
+                    <label class="label">About Me!</label>
+                    <div class="control">
+                        <textarea class="textarea" id="aboutme" placeholder="This area is all mine..."></textarea>
+                    </div>
+                </div>
+
+
+                <div class="field">
+                    <div class="control">
+                        <label class="checkbox">
+                            <input type="checkbox" id="checker"> I agree to the
+                            <a href="#">terms and conditions</a>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button class="button is-link is-large" id="submit">Submit</button>
+                    </div>
+                    <div class="control">
+                        <button class="button is-text is-large" >Cancel</button>
+                      
+                    </div>
+                </div>
+
             </div>
-        </div>
-    </div>
+            <div class="field">
+                <!-- <span id="pasteit"></span> -->
 
-    <div class="field">
-        <label class="label">About Me!</label>
-        <div class="control">
-            <textarea class="textarea" placeholder="This area is all mine..."></textarea>
-        </div>
-    </div>
+            </div>
 
-    <div class="field">
-        <div class="control">
-            <label class="checkbox">
-                <input type="checkbox"> I agree to the
-                <a href="#">terms and conditions</a>
-            </label>
-        </div>
-    </div>
-
-    <div class="field is-grouped">
-        <div class="control">
-            <button class="button is-link is-large">Submit</button>
-        </div>
-        <div class="control">
-            <button class="button is-text is-large">Cancel</button>
-        </div>
-    </div>
-
-</div>
+                {{!-- <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="./assets/js/authenticate.js"></script> --}}
