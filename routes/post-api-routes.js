@@ -5,13 +5,13 @@ module.exports = function(app) {
   // GET route for getting all of the posts
   app.get("/api/posts", function(req, res) {
     var query = {};
-    if (req.query.author_id) {
-      query.AuthorId = req.query.author_id;
+    if (req.query.posts_id) {
+      query.PostsId = req.query.posts_id;
     }
 
     db.Post.findAll({
-      where: query,
-      include: [db.Author]
+      where: query
+      // include: [db.Profile]
     }).then(function(dbPost) {
       res.json(dbPost);
     });
@@ -24,7 +24,7 @@ module.exports = function(app) {
       where: {
         id: req.params.id
       },
-      include: [db.Author]
+      include: [db.Profile]
     }).then(function(dbPost) {
       res.json(dbPost);
     });
