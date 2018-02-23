@@ -2,20 +2,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> */}
 
 
-
-
+// *******************************************************************
+    // firebase account info. fuzbuzcode@gmail.com password:bootcamp
 
 
     
         // Initialize Firebase
         var config = {
-    apiKey: "AIzaSyCZ14iHkwl_Am9U0aWUgCbCQvIRoqThRdw",
-    authDomain: "secretsantaproject-8fe33.firebaseapp.com",
-    databaseURL: "https://secretsantaproject-8fe33.firebaseio.com",
-    projectId: "secretsantaproject-8fe33",
-    storageBucket: "secretsantaproject-8fe33.appspot.com",
-    messagingSenderId: "479329753684"
-  };
+            apiKey: "AIzaSyAeQJwkVH-GGNljxlOtq5Zc5KnkPNwZ44Q",
+            authDomain: "fuzbuzproject.firebaseapp.com",
+            databaseURL: "https://fuzbuzproject.firebaseio.com",
+            projectId: "fuzbuzproject",
+            storageBucket: "fuzbuzproject.appspot.com",
+            messagingSenderId: "519972404805"
+          };
         firebase.initializeApp(config);
 
 
@@ -109,6 +109,7 @@
                     console.log(snapshot.val().nname);
                     console.log(snapshot.val().eemail);
                 });
+                res.redirect("/");
 
         //*************************the code below will send the user a verification email
 
@@ -140,11 +141,11 @@
                 email = user.email;
                 console.log((email));
                 $("#status").text("Hello " + email);
-                window.location = "test.html";
+                // window.location = "/";
     //   res.redirect("/");
                 // code below is for showing the user's name on the page
                 database.ref().on("value", function (snapshot) {
-                    $("#logintitle").text("Merry Giftmas " + snapshot.val().email);
+                    $("#logintitle").text("hello" + snapshot.val().email);
                 });
               }
               else {
