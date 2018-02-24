@@ -141,6 +141,10 @@
                 email = user.email;
                 console.log((email));
                 $("#status").text("Hello " + email);
+
+                // if (window.location ="/profile"){
+                //     windows.location="/";
+                // };
                 // window.location = "/";
     //   res.redirect("/");
                 // code below is for showing the user's name on the page
