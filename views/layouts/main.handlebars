@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <title>FuzBuz</title>
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Bulma CDN -->
@@ -13,7 +13,7 @@
     <!-- favicon link -->
     <link rel="shortcut icon" href="assets/images/beardoe.ico" type="image/x-icon">
 
-    
+
 </head>
 
 <body>
@@ -24,9 +24,11 @@
                     <img src="assets/images/beard_logo2.jpg" alt="">
                 </div>
                 <div>
-                     <h1 class="title-1 shake--hover shake">
-                        FuzBuz
-                    </h1>
+                    <a href="/">
+                        <h1 class="title-1 shake--hover shake">
+                            FuzBuz
+                        </h1>
+                    </a>
                     <p class="subtitle">
                         A site for
                         <strong id="beardo-text">Beardoes</strong> and those who love them!
@@ -34,118 +36,128 @@
                 </div>
             </div>
             <!-- =========================NAV BAR=====================================================  -->
-      <div class="columns">
-        <div class="column">
-          <!-- <nav class="navbar is-pulled-right" role="navigation" aria-label="main navigation"> -->
-          <!-- <div class="column is-half is-offset-one-quarter"> -->
+            <div class="columns">
+                <div class="column">
+                    <!-- <nav class="navbar is-pulled-right" role="navigation" aria-label="main navigation"> -->
+                    <!-- <div class="column is-half is-offset-one-quarter"> -->
 
-            <!-- Side navbar -->
-            <div id="sideNavigation" class="sidenav">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <div id="main1">
-                <div id="profileImage">
-                  <img src="assets/images/will_placeholder.jpg">
-     </div>
-                <br>
-                <div class="userName">
-                <h3>Username</h3>
+                    <!-- Side navbar -->
+                    <div id="sideNavigation" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div id="main1">
+                            <div id="profileImage">
+                                <img src="assets/images/will_placeholder.jpg">
+                            </div>
+                            <br>
+                            <div class="userName">
+                                <h3>Username</h3>
+                            </div>
+                            <br>
+                            <div class="about">
+                                <h4 id="aboutTitle">About me</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                        <br>
+                        <a id="logout">
+                            <span class="icon">
+                                <i class="fas fa-sign-out-alt"></i>
+                            </span>
+                            <button id="logoutbtn">Log Out</button>
+
+                        </a>
+
+                    </div>
+
+                    <nav class="topnav navbar">
+                        <a href="#" onclick="openNav()">
+                            <h4 id="profile-button">Profile</h4>
+                            <svg width="30" height="30" id="icoOpen">
+                                <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
+                                <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
+                                <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
+                            </svg>
+                        </a>
+
+                    </nav>
+
+
+                    <a href="/profile" class="button">
+                        <span class="icon">
+                            <i class="fas fa-user-plus"></i>
+                        </span>
+                        <span>Register</span>
+                    </a>
+                    <a class="button modal-button" data-target="modal" id="login">
+                        <span class="icon">
+                            <i class="fas fa-sign-in-alt"></i>
+                        </span>
+                        <span>Login</span>
+
+                    </a>
+                    <a href="/doodle" class="button">
+                        <span class="icon">
+                            <i class="fas fa-smile"></i>
+                        </span>
+                        <span>Give Yourself a Beard!</span>
+                    </a>
+                    <!-- </div> -->
                 </div>
-                <br>
-                <div class="about">
-                <h4 id="aboutTitle">About me</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <!-- =============================END OF NAVS================================================== -->
+            <!-- =============================MODAL SECTION=========================================== -->
+            <div id="modal" class="modal">
+                <!-- "is-active" -->
+                <div class="modal-background"></div>
+                <div class="modal-content">
+                    <div class="box">
+                        <div class="field is-horizontal">
+                            <label class="label">Username</label>
+                            <div class="control has-icons-left">
+                                <input class="input-modal" type="text">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-user"></i>
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="field is-horizontal">
+                            <label class="label">Password</label>
+                            <p class="control has-icons-left">
+                                <input class="input-modal" type="password">
+                                <span class="icon is-small is-right">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </p>
+                        </div>
+                        <a class="button1 is-black">
+                            <span class="icon">
+                                <i class="fas fa-cut"></i>
+                            </span>
+                            <span class="label">Forgot Password</span>
+                        </a>
+                        <br>
+                        <a class="button1 is-black">
+                            <span class="icon">
+                                <i class="far fa-hand-peace"></i>
+                            </span>
+                            <span class="label modalClose" id="loginbtn">Welcome Beardo</span>
+                        </a>
+                    </div>
                 </div>
-                </div>
-                <br>
-                <a id="logout">
-                    <span class="icon">
-                        <i class="fas fa-sign-out-alt"></i>
-                    </span>
-                    <button id="logoutbtn">Log Out</button>
-      
-                  </a>
-
+                <button class="modal-close is-large" aria-label="close"></button>
             </div>
-
-            <nav class="topnav navbar">
-              <a href="#" onclick="openNav()">
-                <h4 id="profile-button">Profile</h4>
-                <svg width="30" height="30" id="icoOpen">
-                  <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
-                  <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
-                  <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
-                </svg>
-              </a>
-
-            </nav>
-
-
-            <a href="/profile" class="button">
-              <span class="icon">
-                <i class="fas fa-user-plus"></i>
-              </span>
-              <span>Register</span>
-            </a>
-            <a class="button modal-button" data-target="modal" id="login">
-              <span class="icon">
-                <i class="fas fa-sign-in-alt"></i>
-              </span>
-              <span>Login - chicken</span>
-
-            </a>
-          <!-- </div> -->
-        </div>
-      </div>
-      <!-- =============================END OF NAVS================================================== -->
-       <!-- =============================MODAL SECTION=========================================== -->
-      <div id="modal" class="modal">
-        <!-- "is-active" -->
-        <div class="modal-background"></div>
-        <div class="modal-content">
-          <div class="box">
-            <div class="field is-horizontal">
-              <label class="label">Username</label>
-              <div class="control has-icons-left">
-                <input class="input-modal" type="text">
-                <span class="icon is-small is-left">
-                  <i class="fas fa-user"></i>
-                </span>
-               
-              </div>
-            </div>
-            <div class="field is-horizontal">
-              <label class="label">Password</label>
-              <p class="control has-icons-left">
-                <input class="input-modal" type="password">
-                <span class="icon is-small is-right">
-                  <i class="fas fa-lock"></i>
-                </span>
-              </p>
-            </div>
-            <a class="button is-black">
-              <span class="icon">
-                <i class="fas fa-cut"></i>
-              </span>
-              <span class="label">Forgot Password</span>
-            </a>
-            <br>
-            <a class="button is-black">
-              <span class="icon">
-                <i class="far fa-hand-peace"></i>
-              </span>
-              <span class="label" id="loginbtn">Welcome Beardo</span>
-            </a>
-          </div>
-        </div>
-        <button class="modal-close is-large" aria-label="close"></button>
-      </div>
-      <!-- ============================END OF MODAL================================================================= -->
+            <!-- ============================END OF MODAL================================================================= -->
             {{{ body }}}
     </section>
-     </div>
-                          <button id="submit">fakesubmit</button>
+    </div>
+    <button id="submit">fakesubmit</button>
 
-        </div>
+    </div>
     <footer class="footer">
         <div class="container">
             <div class="content has-text-centered">
@@ -155,7 +167,7 @@
                     <a href=""></a>
                     <a href=""></a>.
                 </p>
-           
+
     </footer>
 
     <!--  Jquery link -->
@@ -168,11 +180,11 @@
     <script type="text/javascript" src="assets/js/script.js">
     </script>
 
-     <script src="./assets/js/postit.js"></script>
+    <script src="./assets/js/postit.js"></script>
 
     <!-- link to firebase -->
     <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./assets/js/authenticate.js"></script>
 
 </body>
@@ -180,4 +192,3 @@
 
 
 </html>
-
