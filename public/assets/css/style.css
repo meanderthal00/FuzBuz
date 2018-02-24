@@ -87,11 +87,14 @@
 }
 
  .input-modal {
-    color:#f5deb3;
+    /* color:#f5deb3; */
+    color:black;
+    margin-left: 40px;
+    margin-top: 10px;
 } 
 
 .modal-background {
-    background-image: -webkit-radial-gradient(#D9B310, #0B3C5d,#D9B310, #0B3C5d,#D9B310, #0B3C5d,#D9B310, #0B3C5d,#D9B310);
+    /* background-image: -webkit-radial-gradient(#D9B310, #0B3C5d,#D9B310, #0B3C5d,#D9B310, #0B3C5d,#D9B310, #0B3C5d,#D9B310); */
     /* opacity: .75; */
     /* background-repeat: no-repeat; */
     /* background-size: cover; */
@@ -112,8 +115,12 @@
     /* background-image:url("../images/cool-blue-background.jpg"); */
     background: -webkit-linear-gradient(#D9B310, #0B3C5d);
 
-    color: #f5deb3 !important;
+    color: #f5deb3 ;
    
+}
+
+.buttonFont {
+    color: #0B3C5D;
 }
 
 #clear-canvas {
