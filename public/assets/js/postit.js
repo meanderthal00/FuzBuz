@@ -39,14 +39,19 @@ $(document).ready(function() {
   function infoscreen(profile) {
     var newinfo = $(
       [
-        "<li class='list-group-item todo-item'>",
+        "<li class='list-group-item show-item'>",
         "<span>",
-        // profile.username,
+        "Username: "+profile.username,
+        "<br>",
+        "About User: "+profile.aboutMe,
+        "<br>",
+        "Beard Type: "+profile.beardStatus,
+        "<br>",
         "</span>",
         // "<input type='text' class='edit' style='display: none;'>",
         // "<button class='delete btn btn-default'>x</button>",
         // "<button class='complete btn btn-default'>✓</button>",
-        "</li>"
+        "</li>", "<br>"
       ].join("")
     );
 // console.log(newinfo);
